@@ -1,23 +1,13 @@
-# Build artifacts
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
-
-# Go build output
-bin/
-
-# IDE
+# VS Code settings
 .vscode/
 
 # Environment files
 .env
 
-# Runtime generated outputs
+# Generated outputs
 output/*.txt
 output/*.json
 
-# Sample PDFs / uploaded PDFs
+# Uploaded PDFs
 uploads/*.pdf
 uploads/*.PDF
