@@ -167,7 +167,3 @@ medicine_id
 ```
 
 ---
-
-## Author
-
-Dibyanshu Sah
