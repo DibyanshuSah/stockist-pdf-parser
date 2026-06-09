@@ -2,8 +2,8 @@
 
 \.env
 
+#files that stores the outputs in different form
 output/*.txt
 output/*.json
-
 uploads/*.pdf
 uploads/*.PDF

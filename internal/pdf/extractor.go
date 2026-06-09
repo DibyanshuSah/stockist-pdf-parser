@@ -1,11 +1,10 @@
 package pdf
-
 import (
 	"fmt"
 	"strings"
 	pdf "github.com/ledongthuc/pdf"
 )
-// ExtractText extracts plain text from all pages of a PDF.
+// ExtractText helps in the ectraction of the plain text from all pages of a PDF.
 func ExtractText(pdfPath string) (string, error) {
 	file, reader, err := pdf.Open(pdfPath)
 	if err != nil {
@@ -31,3 +30,6 @@ func ExtractText(pdfPath string) (string, error) {
 
 	return textBuilder.String(), nil
 }
+
+
+

@@ -10,16 +10,13 @@ func FileExists(path string) bool {
 	_, err := os.Stat(path)
 	return err == nil
 }
-
-// IsPDF verifies file extension.
+// IsPDF verifies the extension of the file uploaded.
 func IsPDF(path string) bool {
 	ext := strings.ToLower(filepath.Ext(path))
 	return ext == ".pdf"
 }
-
-// ValidatePDF performs basic validation.
+// ValidatePDF performs the basic validation.
 func ValidatePDF(path string) error {
-
 	if !FileExists(path) {
 		return errors.New("file not found")
 	}
@@ -29,11 +26,14 @@ func ValidatePDF(path string) error {
 
 	return nil
 }
-// EnsureDirectory creates a folder if needed.
+// EnsureDirectory creates a folder if required.
 func EnsureDirectory(path string) error {
 	return os.MkdirAll(path, os.ModePerm)
 }
-// SaveText writes extracted text to disk.
+// SaveText writes the extracted text to the disk.
 func SaveText(path string, content string) error {
 	return os.WriteFile(path, []byte(content), 0644)
 }
+
+
+
