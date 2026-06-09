@@ -1,13 +1,9 @@
-# VS Code settings
-.vscode/
+\.vscode/
 
-# Environment files
-.env
+\.env
 
-# Generated outputs
 output/*.txt
 output/*.json
 
-# Uploaded PDFs
 uploads/*.pdf
 uploads/*.PDF
