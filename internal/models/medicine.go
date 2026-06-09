@@ -1,11 +1,8 @@
 package models
-// InventoryItem represents one row extracted from a PDF.
-// Different stockists may use different column names.
-// Example:
-// Medicine Name
-// Product Name
-// Item Description
-// Drug Name     (all of them will eventually map into these fields.)
+// InventoryItem represents one row extracted from the pdf.
+// different stockists may use different column names.
+// example like : medicine name, product name, item description
+// drup name (all of them will eventually map into these fields.)
 type InventoryItem struct {
 	ItemName string `json:"item_name"`
 	ItemCode string `json:"item_code"`
